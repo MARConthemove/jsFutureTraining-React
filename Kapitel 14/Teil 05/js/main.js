@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addStudentButton.addEventListener("click", (event) => {
         event.preventDefault()
+        console.log(event)
         const text = nameInput.value
 
         if (text === "") {
@@ -21,5 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         liElement.classList.add("list-group-item")
 
         studentList.appendChild(liElement)
+
+        nameInput.value = ""
     })
 })
