@@ -16,6 +16,16 @@ const KEY_ENTER = 13
 document.addEventListener("DOMContentLoaded", () => {
     const newTodoElement = document.querySelector(".new-todo")
     const todoListElement = document.querySelector(".todo-list")
+    const footerElement = document.querySelector(".footer")
+
+    const refreshFooter = () => {
+        if (todoListElement.children.length === 0) {
+            console.log(footerElement)
+            footerElement.style.display = "none"
+        } else {
+            footerElement.style.display = ""
+        }
+    }
 
     const addCallbacksForLi = (liElement) => {
         const checkBoxElement = liElement.querySelector(".toggle")
