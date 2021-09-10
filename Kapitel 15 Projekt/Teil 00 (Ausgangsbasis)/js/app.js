@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const newTodoElement = document.querySelector(".new-todo")
     const todoListElement = document.querySelector(".todo-list")
     const footerElement = document.querySelector(".footer")
+    const todoCountElement = document.querySelector(".todo-count strong")
 
     const refreshFooter = () => {
         if (todoListElement.children.length === 0) {
@@ -25,7 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             footerElement.style.display = ""
         }
+
+        let todoCounter = 0
+        for (const todoListItem of todoListElement.children) {
+            if (!todoListItem.classList.contains("completed")) {
+                todoCounter++
+            }
+        }
+        todoCountElement.innerText = todoCounter
     }
+    refreshFooter()
 
     const addCallbacksForLi = (liElement) => {
         const checkBoxElement = liElement.querySelector(".toggle")
@@ -38,10 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 liElement.classList.remove("completed")
             }
             console.log("changed!")
+            refreshFooter()
         })
 
         destroyButtonElement.addEventListener("click", () => {
             liElement.remove()
+            refreshFooter()
         })
     }
 
@@ -73,6 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
             todoListElement.prepend(newLiElement)
 
             newTodoElement.value = ""
+
+            refreshFooter()
         }
     })
 })
