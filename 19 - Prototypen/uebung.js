@@ -37,17 +37,46 @@ const studentMethods = {
 const student1 = {
     firstname: "Max",
     lastname: "Müller",
-    yearOfBirth: 1990,
     password: "supersicher",
 }
 
 const student2 = {
     firstname: "Erika",
     lastname: "Mustermann",
-    yearOfBirth: 1985,
     password: "hieraufkommtkeiner",
 }
 
+// Aufgabe 3:
+Object.defineProperty(student1, "password", {
+    value: "supersicher",
+    enumerable: false,
+    writable: true,
+    configurable: true
+})
+
+Object.defineProperty(student2, "password", {
+    value: "hieraufkommtkeiner",
+    enumerable: false,
+    writable: true,
+    configurable: true
+})
+
+// Aufgabe 2:
+Object.defineProperty(student1, "yearOfBirth", {
+    value: 1990,
+    enumerable: true,
+    writable: false,
+    configurable: false
+})
+
+Object.defineProperty(student2, "yearOfBirth", {
+    value: 1885,
+    enumerable: true,
+    writable: false,
+    configurable: false
+})
+
+// Aufgabe 1:
 // Verknüpfung von Prototypen mit student1, student2
 Object.setPrototypeOf(student1, studentMethods)
 Object.setPrototypeOf(student2, studentMethods)
