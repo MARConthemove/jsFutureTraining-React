@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const todoListElement = document.querySelector(".todo-list")
     const footerElement = document.querySelector(".footer")
     const todoCountElement = document.querySelector(".todo-count strong")
+    const clearCompletedElement = document.querySelector(".clear-completed")
 
     const refreshFooter = () => {
         if (todoListElement.children.length === 0) {
@@ -34,6 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
         todoCountElement.innerText = todoCounter
+
+        let completedCounter = todoListElement.querySelectorAll("li.completed").length
+        if (completedCounter === 0) {
+            clearCompletedElement.style.display = "none"
+        } else {
+            clearCompletedElement.style.display = ""
+        }
     }
     refreshFooter()
 
@@ -88,5 +96,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             refreshFooter()
         }
+    })
+
+    clearCompletedElement.addEventListener("click", (event) => {
+        const completedLiElements = todoListElement.querySelectorAll("li.completed")
+        for (const completedLiElement of completedLiElements) {
+            completedLiElement.remove()
+        }
+        refreshFooter()
     })
 })
