@@ -37,10 +37,17 @@
  *     dass ein Wert nicht in einem console.log auftaucht.
  */
 
-
+/**
+ * Use this function to safe a students information
+ * @param {string} firstname
+ * @param {string} lastname
+ * @param {number} yearOfBirth
+ * @param {string} password
+ */
 function Student(firstname, lastname, yearOfBirth, password) {
     this.firstname = firstname
     this.lastname = lastname
+
     // this.yearOfBirth = yearOfBirth
     Object.defineProperty(this, "yearOfBirth", {
         value: yearOfBirth,
@@ -48,6 +55,7 @@ function Student(firstname, lastname, yearOfBirth, password) {
         configurable: false,
         writable: false
     })
+
     // this.password = password
     Object.defineProperty(this, "password", {
         value: yearOfBirth,
