@@ -11,7 +11,7 @@ const data = {
             // this geht innerhalb der Callback Funktion verloren!
             this.todos.push(todo)
         })
-    }
+    }wwww
 }
 
 data.addTodo("3. Todo")
