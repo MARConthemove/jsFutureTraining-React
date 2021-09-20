@@ -1,6 +1,11 @@
 import "./ExpenseItem.css"
 import ExpenseDate from "./ExpenseDate"
 
+/**
+ *
+ * @param {object} props
+ * @returns
+ */
 function ExpenseItem(props) {
     return (
         <div className="expense-item">
