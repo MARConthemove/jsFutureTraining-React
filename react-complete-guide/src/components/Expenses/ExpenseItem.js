@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import "./ExpenseItem.css"
 import ExpenseDate from "./ExpenseDate"
 import Card from "../UI/Card"
+
 /**
  *
  * @param {object} props
@@ -16,8 +17,9 @@ const ExpenseItem = (props) => {
    */
   const [title, setTitle] = useState(props.title)
 
+  // ClickHandler für button
   const clickHandler = () => {
-    setTitle('Updated!!')
+    setTitle(title + " !!!!")
     console.log(title)
   }
 
