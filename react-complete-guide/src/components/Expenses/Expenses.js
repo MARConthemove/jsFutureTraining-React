@@ -2,7 +2,8 @@ import ExpenseItem from "./ExpenseItem"
 import Card from "../UI/Card"
 
 import "./Expenses.css"
-import ExpensesFilter from "../ExpensesFilter/ExpensesFilter"
+import ExpensesFilter from "./ExpensesFilter"
+
 
 const Expenses = (props) => {
   return (

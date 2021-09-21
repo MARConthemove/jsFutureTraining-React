@@ -1,4 +1,3 @@
-import ExpensesFilter from "./components/ExpensesFilter/ExpensesFilter"
 import Expenses from "./components/Expenses/Expenses"
 import NewExpense from "./components/NewExpense/NewExpense"
 
