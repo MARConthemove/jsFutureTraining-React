@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 
 import Button from '../../UI/Button/Button'
 import './CourseInput.css'
-import styled from 'styled-components'
+
+import style from './CourseInput.module.css'
 
 const FormControll = styled.div`
   margin: 0.5rem 0;
