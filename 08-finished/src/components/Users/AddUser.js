@@ -7,6 +7,7 @@ import classes from './AddUser.module.css'
 import Wrapper from '../Helpers/Wrapper'
 
 // Uncontrolled Components (most of the time form components)
+// useRef refstate
 const AddUser = (props) => {
   const nameInputRef = useRef()
   const ageInputRef = useRef()
