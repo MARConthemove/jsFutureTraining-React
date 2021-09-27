@@ -12,7 +12,7 @@ const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false)
 
   useEffect(() => {
-    console.log('Effect Running')
+    console.log('EFFECT RUNNING')
     return () => {
       console.log('Effect cleanup')
     }
