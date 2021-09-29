@@ -1,20 +1,26 @@
-.form {
-  text-align: right;
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-.form input {
-  font: inherit;
-  cursor: pointer;
-  background-color: #C32CAD;
-  border: 1px solid #C32CAD;
-  color: white;
-  padding: 0.25rem 2rem;
-  border-radius: 20px;
+.input label {
   font-weight: bold;
+  margin-right: 1rem;
 }
 
-.form button:hover,
-.form button:active {
-  background-color: #7128A0;
-  border-color: #7128A0;
+.input input {
+  width: 3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
