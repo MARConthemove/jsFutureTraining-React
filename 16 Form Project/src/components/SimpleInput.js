@@ -7,12 +7,19 @@ const SimpleInput = (props) => {
   const nameInputChangeHandler = (event) => {
     setEnteredName(event.target.value)
   }
+
   const formSubmissionHandler = (event) => {
     event.preventDefault()
 
+    if (enteredName.trim() === '') {
+      return
+    }
+
     console.log('Entered Name with useState:', enteredName)
     const enteredValue = nameInputRef.current.value
+
     console.log('Entered Name with useRef:', enteredValue)
+    setEnteredName('')
   }
 
   return (
