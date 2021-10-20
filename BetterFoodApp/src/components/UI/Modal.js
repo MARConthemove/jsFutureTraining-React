@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import classes from './Modal.module.css';
 
+// only for the backdrops of the menu
 const Backdrop = (props) => {
   return <div className={classes.backdrop} onClick={props.onClose}/>;
 };
