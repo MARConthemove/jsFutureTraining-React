@@ -18,6 +18,10 @@ main {
   text-align: center;
 }
 
+main li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
