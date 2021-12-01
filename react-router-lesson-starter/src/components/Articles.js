@@ -4,30 +4,31 @@ import { selectArticles, filterArticles } from "../features/articles/articlesSli
 import Search from "./Search";
 
 // Import Link from React Router
+import { Link } from "react-router-dom";
 
 export default function Articles () {
   const articles = useSelector(selectArticles)
-  
+
   // grab the search value from useLocation()
-  
-  // get the queryParams from new URLSearchParams() 
-  
+
+  // get the queryParams from new URLSearchParams()
+
   const title = '' // <-- fix me!
-  
+
   const filteredArticles = title ? filterArticles(title, articles) : Object.values(articles)
 
   return (
     <main>
       <h1>Articles</h1>
       <ul>
-        { 
+        {
           filteredArticles.map(article => {
             return (
               <li key={article.slug}>
                 {/* Replace these a tags! */}
-                <a href={`/articles/${article.slug}`}>
+                <Link to={`/articles/${article.slug}`}>
                   {article.title}
-                </a>
+                </Link>
               </li>
             )
           })
