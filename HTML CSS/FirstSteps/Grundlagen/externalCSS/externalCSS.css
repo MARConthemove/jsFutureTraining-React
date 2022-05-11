@@ -1,0 +1,18 @@
+html {
+  background-color: blueviolet;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  text-decoration: underline;
+}
+
+p {
+  color: yellow;
+}
+
+span {
+  color: white;
+  font-weight: bold;
+}
