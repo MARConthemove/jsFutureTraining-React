@@ -1,0 +1,25 @@
+#absolut {
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+  background-color: #F00;
+}
+
+#prozent {
+  width: 20%;
+  height: 20%;
+  background-color: green;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
+#em {
+  font-size: 2em;
+}

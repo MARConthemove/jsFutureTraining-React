@@ -1,0 +1,48 @@
+* {
+  background-color: grey;
+}
+
+div {
+  background-color: rgb(43, 226, 217);
+  font-weight: 800;
+  color: yellow;
+  width: 400px;
+  height: 400px;
+  padding: 100px 50px;
+  margin: 100px 50px;
+}
+
+#div1 {
+  border: 30px solid rgb(125, 50, 138);
+}
+
+#div2 {
+  border-width: 20px;
+  border-style: solid;
+  border-color: red;
+}
+
+#div3 {
+  border-width: 20px;
+  border-style: dashed;
+  border-color: red;
+}
+
+#div4 {
+  border-bottom: 10px solid blue;
+  border-top: 20px solid red;
+  border-right: 40px solid black;
+  border-left: 40px dotted black;
+}
+
+#div5 {
+  color: yellowgreen;
+  font-weight: bold;
+  height: 50px;
+  width: 400px;
+  padding: 15px;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: deepskyblue;
+  border-left: 10px solid dodgerblue;
+}
