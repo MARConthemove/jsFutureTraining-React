@@ -1,0 +1,14 @@
+* {
+  /* Box Modell verändert sich nicht ungewollt */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* Standard 8px margin, deshalb hier Anpassung um kein Margin zu haben */
+  margin: 0;
+  font-family: 'Raleway', 'Lato', 'Helvetica Neue', Arial, sans-serif;
+}
