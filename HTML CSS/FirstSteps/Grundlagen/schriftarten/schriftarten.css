@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Loop&display=swap');
+
+body {
+  font-family: 'Times New Roman', 'Verdana', sans-serif;
+}
+
+#test1 {
+  font-family: serif;
+}
+
+#test2 {
+  font-family: sans-serif;
+}
+
+#test3 {
+  font-family: cursive;
+}
+
+#test4 {
+  font-family: fantasy;
+}
+
+#test5 {
+  font-family: monospace;
+}
+
+#test6 {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Zen Loop', cursive;
+}
