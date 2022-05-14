@@ -1,0 +1,22 @@
+.container {
+  background-color: blueviolet;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+p {
+  background-color: aquamarine;
+}
+
+.clearfix::after {
+  /* speudoelement hat keinen Inhalt und somit die Hoehe 0 */
+  content: "";
+  /* auf beiden seite keine Floats -> somit rückt es unter das Bild */
+  clear: both;
+  /* Nimmt die Breite des Eltern elements ein */
+  display: block;
+}

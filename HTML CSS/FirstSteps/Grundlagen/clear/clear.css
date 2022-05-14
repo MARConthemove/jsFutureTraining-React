@@ -6,6 +6,14 @@ p {
   float: left;
 }
 
-.test3 {
-  
+.clear-left {
+  clear: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-right {
+  clear: right;
 }
