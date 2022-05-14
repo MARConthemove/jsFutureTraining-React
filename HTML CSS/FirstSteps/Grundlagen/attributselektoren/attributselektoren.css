@@ -1,0 +1,38 @@
+/* Ein Element mit einem bestimmten Attribut */
+[href] {
+  background-color: blueviolet;
+}
+
+/* Ein Element mit einem bestimmten ATtribut mit einem bestimmten Wert */
+[id='dasIstEinAnker'] {
+  display: block;
+}
+
+/* Ein Element mit einem bestimmten Attribut, das in einem seiner Werte einen bestimmten Wert haben muss */
+[class~='einBild'] {
+  height: 100px;
+}
+
+/* Ein Element mit einem bestimmten Attribut, das entweder genau einen bestimmten Wert hat oder ömit einem bestimmten Wert beginnt, dem ein "-" folgt */
+[class|='test'] {
+  width: 300px;
+}
+
+/* Ein Element mit einem besitmmten Attribut, das mit einem bestimmten Wert beginnt */
+[title^='Ich bin'] {
+  border: 10px solid yellow;
+}
+
+/* Ein Element mit einem bestimmten Attribut, das mit einem bestimmten Wert endet */
+[title$="Anker-Element"] {
+  color: white;
+}
+
+/* Ein Element mit einem bestimmten Attribut, das einen bestimmten Wert enthält (egal wo) */
+[id*="IstEin"] {
+  text-decoration: none;
+}
+
+[id*="anker" i] {
+  font-weight: bold;
+}
