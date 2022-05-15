@@ -160,3 +160,45 @@ p {
 .col-6 {
   width: 100%;
 }
+
+/*
+
+Media Query Breakpoints
+
+320   px  iphone hochformat
+480   px  iphone querformat
+768   px  ipad hochformat
+1024  px  ipad querformat
+1200  px  laptop
+>1200 px  große endgeräte
+*/
+
+@media (max-width: 1024px) {
+  .col-1 {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-1 {
+    width: 50%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
