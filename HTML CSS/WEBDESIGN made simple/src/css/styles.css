@@ -7,6 +7,8 @@
   #FCF69C Gelb
 */
 
+/* Global */
+
 * {
   /* Box Modell verändert sich nicht ungewollt */
   box-sizing: border-box;
@@ -23,6 +25,18 @@ body {
   font-size: 16px;
 }
 
+/* Generelles */
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.active {
+  background-color: #FF6FB5 !important;
+}
+
 /* Navigationsleiste */
 
 .header-nav {
@@ -34,56 +48,122 @@ body {
   font-size: 1.1rem;
 }
 
-.header-nav > a > img {
+.header-nav a > img {
   height: 30px;
   width: auto;
-  position: absolute;
-  left: 2rem;
-  top: 0.55rem;
+  float: left;
+  margin-top: 0.55rem;
 }
 
-.header-nav > ul {
+.header-nav ul {
   margin: 0;
   padding: 0;
-  position: absolute;
-  right: 2rem;
+  float: right;
   height: 100%;
 }
 
-.header-nav > ul > li {
+.header-nav ul > li {
   display: inline-block;
   height: 100%;
   padding: 0 0.4rem 0 0.4rem;
 }
 
-.header-nav > ul > li > a {
+.header-nav ul > li > a {
   display: inline-block;
   margin-top: 0.8rem;
 }
 
-.header-nav > ul > li > a:link {
+.header-nav ul > li > a:link {
   color: #ab46d2;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:hover {
+.header-nav ul > li > a:hover {
   color: #ff6fb5;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:active {
+.header-nav ul > li > a:active {
   color: #ff6fb5;
   text-decoration: none;
 }
 
-.header-nav > ul > li > a:visited {
+.header-nav ul > li > a:visited {
   color: #ab46d2;
   text-decoration: none;
 }
 
-.active {
+.header-nav .col-6 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header-nav .container,
+.header-nav .row,
+.header-nav .col-6 {
+  height: 100%;
+}
+
+/* Navigationsleiste (mobil) */
+
+.mobile-nav-button {
+  color: #fff;
+  float: right;
+  font-size: 2rem;
+  border: 2px solid #fff;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  margin-top: 0.4rem;
+  margin-bottom: 7px;
+}
+
+.mobile-nav-button > span {
+  position: absolute;
+  bottom: -2px;
+  left: 7px;
+}
+
+.mobile-nav-content > ul > li {
+  display: block;
   background-color: #fcf69c;
+  height: 50px;
+  padding: 0 1.2rem;
+  text-align: center;
 }
+
+.mobile-nav-dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.mobile-nav-content {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/* Header Banner */
 
 .header-banner {
   background: url('../img/hintergrund.jpg') no-repeat 50% 50%;
@@ -108,7 +188,7 @@ body {
 }
 
 /* GRID-System (sichtbarkeit) */
-.border,
+/* .border,
 .border * {
   border: 1px solid #ab46d2;
 }
@@ -122,7 +202,7 @@ p {
   padding: 0;
   margin: 0;
   text-align: center;
-}
+} */
 
 /* GRID-System */
 
