@@ -1,4 +1,4 @@
-/* Farbcode */
+/* === FARBCODE === */
 
 /*
   #AB46D2 Lila
@@ -7,7 +7,7 @@
   #FCF69C Gelb
 */
 
-/* Global */
+/* === GLOBAL === */
 
 * {
   /* Box Modell verändert sich nicht ungewollt */
@@ -25,7 +25,7 @@ body {
   font-size: 16px;
 }
 
-/* Generelles */
+/* === GENERELLES === */
 
 .clearfix::after {
   content: '';
@@ -34,10 +34,25 @@ body {
 }
 
 .active {
-  background-color: #FF6FB5 !important;
+  background-color: #ff6fb5 !important;
 }
 
-/* Navigationsleiste */
+.wichtiger-text {
+  font-weight: bold;
+}
+
+.screenreader {
+  display: none;
+}
+
+.btn-typ-1 {
+  background-color: #55d8c1;
+  border: 2px solid #ff6fb5;
+  color: #ff6fb5;
+  padding: 0.4rem 0.6rem;
+}
+
+/* === NAVIGATIONSLEISTE === */
 
 .header-nav {
   width: 100%;
@@ -104,7 +119,7 @@ body {
   height: 100%;
 }
 
-/* Navigationsleiste (mobil) */
+/* NAVIGATIONSLEISTE (MOBILE) */
 
 .mobile-nav-button {
   color: #fff;
@@ -163,7 +178,7 @@ body {
   }
 }
 
-/* Header Banner */
+/* HEADER-BANNER */
 
 .header-banner {
   background: url('../img/hintergrund.jpg') no-repeat 50% 50%;
@@ -187,7 +202,38 @@ body {
   background-size: contain;
 }
 
-/* GRID-System (sichtbarkeit) */
+/* === NEWSLETTER-BEREICH === */
+
+.newsletter-bereich {
+  width: 100%;
+  background-color: #fcf69c;
+}
+
+#nb-werbetext {
+  color: #ab46d2;
+  font-size: 1.2rem;
+}
+
+#nb-form {
+  margin-top: 0.7rem;
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+.nb-email-input {
+  width: 78%;
+  height: 35px;
+  border: 2px solid #55d8c1;
+  padding: 0.4rem 0.4rem;
+}
+
+#nb-btn {
+  height: 35px;
+}
+
+/* === GRID-SYSTEM (SICHTBARKEIT) === */
+
 /* .border,
 .border * {
   border: 1px solid #ab46d2;
@@ -204,7 +250,7 @@ p {
   text-align: center;
 } */
 
-/* GRID-System */
+/* === GRID-System === */
 
 .container {
   width: 95%;
@@ -212,7 +258,8 @@ p {
   margin-right: auto;
 }
 
-/* clearfix hack --> */
+/* === CLEARFIX-HACK === */
+
 .row::after {
   content: '';
   clear: both;
@@ -237,14 +284,17 @@ p {
   width: 50%;
 }
 
+.col-4 {
+  width: 66.666%;
+}
+
 .col-6 {
   width: 100%;
 }
 
+/* === MEDIA QUERY BREAKPOINTS === */
+
 /*
-
-Media Query Breakpoints
-
 320   px  iphone hochformat
 480   px  iphone querformat
 768   px  ipad hochformat
@@ -269,6 +319,9 @@ Media Query Breakpoints
   .col-3 {
     width: 100%;
   }
+  .col-4 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -279,6 +332,9 @@ Media Query Breakpoints
     width: 100%;
   }
   .col-3 {
+    width: 100%;
+  }
+  .col-4 {
     width: 100%;
   }
 }
