@@ -1,0 +1,36 @@
+/* === similar to html {} === */
+:root {
+  font-size: 25px;
+}
+
+/* === Wählt alle leeren Elemente, kominierbar mit normalen Selectoren (bsp. p) === */
+p:empty {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.container p:first-child {
+  font-weight: bold;
+}
+
+.container :last-child {
+  text-decoration: underline;
+}
+
+.container :nth-child(5) {
+  color: red;
+}
+
+.container :nth-child(even) {
+  background-color: grey;
+}
+
+.container :nth-child(odd) {
+  background-color: blue;
+}
+
+.container :nth-child(3n+1) {
+  text-decoration: line-through;
+}
+/* 1 4 7 10 13 16 19 */
