@@ -124,10 +124,15 @@ section {
 .intro-container > h1 {
   font-size: 1.6rem;
   text-transform: uppercase;
+  /* von mir geändert: */
+  font-weight: 500;
 }
 
 .intro-container > p {
-  font-size: 1.2rem;
+  /* von mir auf 1.1rem anstatt 1.2rem geändert: */
+  font-size: 1.1rem;
+  /* von mir geändert: */
+  font-weight: 400;
 }
 
 @media (max-width: 1366px) {
@@ -412,6 +417,45 @@ section {
   }
 }
 
+/* === VIDEO-BEREICH === */
+
+#video-bereich {
+  background-color: #fcf69c;
+  color: #ab46d2;
+}
+
+#video-bereich video {
+  display: block;
+  width: 35%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1440px) {
+  #video-bereich video {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #video-bereich video {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #video-bereich video {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  #video-bereich video {
+    width: 100%;
+  }
+}
+
 /* === GRID-SYSTEM (SICHTBARKEIT) === */
 
 /* .border,
@@ -473,15 +517,6 @@ p {
 }
 
 /* === MEDIA QUERY BREAKPOINTS === */
-
-/*
-320   px  iphone hochformat
-480   px  iphone querformat
-768   px  ipad hochformat
-1024  px  ipad querformat
-1200  px  laptop
->1200 px  große endg eräte
-*/
 
 @media (max-width: 1822px) {
   #nb-email-input {
