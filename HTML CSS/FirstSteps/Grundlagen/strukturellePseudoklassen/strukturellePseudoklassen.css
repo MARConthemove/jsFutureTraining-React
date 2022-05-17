@@ -34,3 +34,11 @@ p:empty {
   text-decoration: line-through;
 }
 /* 1 4 7 10 13 16 19 */
+
+.container :nth-last-child(5) {
+  color: red;
+}
+
+body :only-child {
+  border: 5px solid red;
+}
