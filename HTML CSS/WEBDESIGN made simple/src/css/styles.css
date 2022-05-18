@@ -481,7 +481,33 @@ section {
   margin-left: auto;
 }
 
+.service-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
 
+#guenstig-icon {
+  background: #ab46d2 url('./../img/services-sprite.png') left 0 top 0;
+}
+
+#schnell-icon {
+  background: #ab46d2 url('./../img/services-sprite.png') left -120px top 0;
+}
+
+#modern-icon {
+  background: #ab46d2 url('./../img/services-sprite.png') left -240px top 0;
+}
+
+@media (max-width: 768px) {
+  #service-bereich > .container > .row:nth-of-type(2) > .col-2 > .service-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 /* === GRID-SYSTEM (SICHTBARKEIT) === */
 
