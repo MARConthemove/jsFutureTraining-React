@@ -456,6 +456,33 @@ section {
   }
 }
 
+/* === SERVICE-BEREICH === */
+
+#service-bereich {
+  background-color: #55d8c1;
+}
+
+.service-box {
+  text-align: center;
+  width: 80%;
+}
+
+.service-box h1 {
+  font-size: 1.1rem;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:nth-of-type(2) > .service-box {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
 /* === GRID-SYSTEM (SICHTBARKEIT) === */
 
 /* .border,
