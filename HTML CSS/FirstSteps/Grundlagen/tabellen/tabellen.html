@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabellen</title>
+    <link rel="stylesheet" href="tabellen.css" />
+  </head>
+  <body>
+    <!-- OHNE STYLING -->
+    <table>
+      <caption>
+        Tabelle mit Punkten im Test
+      </caption>
+      <!-- thead: kopfbereich der tabelle -->
+      <thead>
+        <!-- tr: table row -->
+        <tr>
+          <!-- th: table header -->
+          <th>Name</th>
+          <th>Nachname</th>
+          <th>Punkte</th>
+        </tr>
+      </thead>
+      <!-- tbody: datenbereich der tabelle -->
+      <tbody>
+        <tr>
+          <!-- td: table data -->
+          <td>Pan</td>
+          <td>Peter</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Mustermann</td>
+          <td>Max</td>
+          <td>33</td>
+        </tr>
+      </tbody>
+      <!-- tfoot: fuß der tabelle (auswertung etc.) -->
+      <tfoot>
+        <tr>
+          <td>Punkte</td>
+          <td>(gesamt)</td>
+          <td>55</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- MIT STYLING -->
+    <table id="test01">
+      <caption>
+        Tabelle mit Punkten im Test
+      </caption>
+      <!-- thead: kopfbereich der tabelle -->
+      <thead>
+        <!-- tr: table row -->
+        <tr>
+          <!-- th: table header -->
+          <th>Name</th>
+          <th>Nachname</th>
+          <th>Punkte</th>
+        </tr>
+      </thead>
+      <!-- tbody: datenbereich der tabelle -->
+      <tbody>
+        <tr>
+          <!-- td: table data -->
+          <td>Pan</td>
+          <td>Peter</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Mustermann</td>
+          <td>Max</td>
+          <td>33</td>
+        </tr>
+      </tbody>
+      <!-- tfoot: fuß der tabelle (auswertung etc.) -->
+      <tfoot>
+        <tr>
+          <td>Punkte</td>
+          <td>(gesamt)</td>
+          <td>55</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="2" >Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td colspan="2" rowspan="2">Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
