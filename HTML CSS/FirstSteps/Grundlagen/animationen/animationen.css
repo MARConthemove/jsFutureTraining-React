@@ -1,7 +1,7 @@
 div {
   width: 200px;
   height: 200px;
-  background-color: red;
+  background-color: gray;
 }
 
 /* from 0%, to 100% */
@@ -50,9 +50,5 @@ div {
 
 #test {
   position: relative;
-  animation: farbwechsel;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-play-state: play;
+  animation: farbwechsel 5s ease-in-out 2s infinite alternate-reverse both running;
 }
