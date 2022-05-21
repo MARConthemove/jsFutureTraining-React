@@ -596,6 +596,19 @@ section {
 
 /* === LEISTUNGEN-SEITE === */
 
+.leistung {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.leistung:nth-of-type(even) {
+  background-color: #fcf69c;
+}
+
+.leistung:nth-of-type(odd) {
+  background-color: #f19cfc;
+}
+
 .flex-container {
   display: flex;
   width: 80%;
