@@ -782,9 +782,31 @@ section {
   color: #ab46d2;
 }
 
+#kontakt-formular input:hover,
+#kontakt-formular textarea:hover,
+#kontakt-formular input:focus,
+#kontakt-formular textarea:focus {
+  box-shadow: 0 0 20px #55d8c1;
+}
 
 #kontakt-formular textarea {
   height: 100px;
+}
+
+.btn-typ-3 {
+  border: 2px solid #ab46d2;
+  border-radius: 8px;
+  background-color: #55d8c1;
+  font-size: 1rem;
+  color: #ab46d2;
+  width: 150px;
+  height: 39px;
+  cursor: pointer;
+}
+
+.btn-typ-3:hover,
+.btn-typ-3:focus {
+  background-color: #55d8c080;
 }
 
 #kontakt-formular {
