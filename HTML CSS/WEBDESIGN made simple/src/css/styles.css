@@ -335,7 +335,7 @@ section {
 
 /* === LEISTUNGEN-BEREICH === */
 
-.leistungs-box {
+.leistungs-teaser-box {
   background-color: #fcf69c;
   text-align: center;
   color: #ab46d2;
@@ -344,17 +344,17 @@ section {
   margin-bottom: 1.6rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
   margin-left: 1rem;
   margin-right: auto;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
   margin-right: 1rem;
   margin-left: auto;
 }
 
-.leistungs-box > h2 {
+.leistungs-teaser-box > h2 {
   font-size: 1.4rem;
 }
 
@@ -387,32 +387,32 @@ section {
 }
 
 @media (max-width: 1366px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 100%;
     margin-bottom: 0.6rem;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0.5rem;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0;
   }
 
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0;
   }
 }
@@ -592,6 +592,160 @@ section {
   #footer span {
     display: none;
   }
+}
+
+/* === LEISTUNGEN-SEITE === */
+
+.flex-container {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leistungs-box {
+  background-color: #55d8c1;
+  flex-basis: 25%;
+  color: black;
+  padding: 2rem 4rem;
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1366px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    width: 100%;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.flex-container > .intro-container {
+  width: 100%;
+}
+
+.leistungs-box-empfohlen {
+  flex-basis: 27.5%;
+  min-height: 720px;
+  box-shadow: 0 0 15px 0;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 1782px) {
+  .leistungs-box {
+    flex-basis: 27.5%;
+  }
+  .leistungs-box-empfohlen {
+    flex-basis: 30%;
+  }
+}
+
+@media (max-width: 1622px) {
+  .leistungs-box {
+    flex-basis: 30%;
+  }
+  .leistungs-box-empfohlen {
+    flex-basis: 32.5%;
+  }
+}
+
+@media (max-width: 1488px) {
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+  .flex-container {
+    align-items: stretch;
+  }
+  .leistungs-box-empfohlen {
+    min-height: initial;
+  }
+}
+
+@media (max-width: 1088px) {
+  .flex-container {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .leistungs-box {
+    margin-bottom: 2rem;
+    min-height: initial;
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 618px) {
+  .flex-container {
+    padding: 0;
+  }
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 409px) {
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 338px) {
+  .leistungs-box {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+}
+
+.leistungs-box h1 {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.leistungs-box ul {
+  padding: 0;
+}
+
+.leistungs-box ul > li {
+  list-style-position: inside;
+  margin-bottom: 0.5rem;
+}
+
+.leistung-auswählen-btn {
+  width: 70%;
+  height: 2.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  min-width: 170px;
+}
+
+.leistung-auswählen-btn:hover {
+  font-weight: normal;
+  color: #fcf69c;
+  border: 1px solid #fcf69c;
 }
 
 /* === GRID-SYSTEM (SICHTBARKEIT) === */
