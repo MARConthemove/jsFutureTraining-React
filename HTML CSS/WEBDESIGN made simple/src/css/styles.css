@@ -277,6 +277,15 @@ section {
   }
 }
 
+/* === ANIMIERTES-LOGO === */
+
+.animiertes-logo {
+  height: 150px;
+  width: 150px;
+  background-color: #55d8c1;
+  border-radius: 50%;
+}
+
 /* HEADER-BANNER */
 
 #header-banner {
@@ -371,7 +380,7 @@ section {
 .leistung-ansehen-btn:link {
   color: #ab46d2;
 }
-
+f
 .leistung-ansehen-btn:active {
   color: #ab46d2;
 }
