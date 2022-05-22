@@ -786,7 +786,7 @@ section {
 #kontakt-formular textarea:hover,
 #kontakt-formular input:focus,
 #kontakt-formular textarea:focus {
-  box-shadow: 0 0 20px #55d8c1;
+  box-shadow: 0 0 10px #55d8c1;
 }
 
 #kontakt-formular textarea {
