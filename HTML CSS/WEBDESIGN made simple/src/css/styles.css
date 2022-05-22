@@ -81,10 +81,10 @@ section {
   border: 2px solid #ff6fb5;
   color: #ff6fb5;
   padding: 0.4rem 0.6rem;
+  transition: border 1s ease-in-out;
 }
 
 .btn-typ-1:hover {
-  background-color: #55d8c1;
   box-shadow: 0 0 10px 2px #ff6fb5;
 }
 
@@ -93,6 +93,7 @@ section {
   background-color: transparent;
   color: #ab46d2;
   padding: 0.4rem 0.6rem;
+  transition: color .5s ease-in-out, border .5s ease-in-out;
 }
 
 .btn-typ-2:hover {
@@ -542,6 +543,11 @@ f .leistung-ansehen-btn:active {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
+  transition: transform 2s;
+}
+
+.service-icon:hover {
+  transform: rotateZ(360deg)
 }
 
 #guenstig-icon {
